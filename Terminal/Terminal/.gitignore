@@ -1,0 +1,4 @@
+﻿**/Scripts/**/*.js
+**/Scripts/**/*.map
+**/wwwroot/js
+dist
