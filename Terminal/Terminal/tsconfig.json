@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"module": "commonjs",
-		"noImplicitAny": true,
+		"noImplicitAny": false,
 		"noEmitOnError": true,
 		"sourceMap": true,
 		"experimentalDecorators": true,

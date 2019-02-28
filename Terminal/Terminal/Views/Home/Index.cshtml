@@ -1,8 +1,38 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Home Page";
 }
-<div id="HomeTerm"></div>
-@section Scripts{ 
-<script src="~/js/App.js"></script>
+<link href="https://unpkg.com/shell.js@1.0.5/dist/css/shell.min.css" rel="stylesheet" />
+<link href="https://code.jquery.com/ui/1.12.1/themes/cupertino/jquery-ui.css" rel="stylesheet" />
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<div class="shell ubuntu dark shadow">
+	<div class="status-bar">
+		@*<div class="buttons">
+			<a href="javascript:;" class="close" title="Close">
+				<i class="fa fa-times"></i>
+			</a>
+			<a href="javascript:;" class="minimize" title="Minimize">
+				<i class="fa fa-minus"></i>
+
+			</a>
+			<a href="javascript:;" class="enlarge" title="Enlarge">
+				<i class="fa fa-plus"></i>
+
+			</a>
+
+		</div>*@
+		<div class="title" id="terminalTitle">user@host: ~</div>
+	</div>
+	<div class="content">
+		<div class="resizable-term" id="HomeTerm"></div>
+	</div>
+</div>
+
+@section Scripts{
+	<script src="~/js/Tools/Dictionary.js"></script>
+	<script src="~/js/App.js"></script>
+	<script src="~/js/Tools/progress.js"></script>
+	<script src="~/js/Processes/help.js"></script>
+	<script src="~/js/Processes/apt-update.js"></script>
+	<script src="~/js/Processes/cls.js"></script>
 
 }

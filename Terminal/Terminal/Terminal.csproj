@@ -8,8 +8,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="bundleconfig.json" />
+    <Content Remove="wwwroot\js\Processes\bundle.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Scripts\App.ts" />
+    <None Remove="Scripts\Processes\apt-update.ts" />
+    <None Remove="Scripts\Processes\cls.ts" />
+    <None Remove="Scripts\Processes\help.ts" />
+    <None Remove="Scripts\Processes\IProcess.ts" />
     <None Remove="Scripts\progress.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\js\Processes\bundle.js" />
   </ItemGroup>
 
 
@@ -21,13 +34,22 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\App.ts" />
-    <TypeScriptCompile Include="Scripts\progress.ts" />
+    <TypeScriptCompile Include="Scripts\Processes\apt-update.ts" />
+    <TypeScriptCompile Include="Scripts\Processes\cls.ts" />
+    <TypeScriptCompile Include="Scripts\Processes\help.ts" />
+    <TypeScriptCompile Include="Scripts\Processes\IProcess.ts" />
+    <TypeScriptCompile Include="Scripts\Tools\progress.ts" />
   </ItemGroup>
 
 
   <ItemGroup>
     <Folder Include="ScriptsModules\" />
-    <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="bundleconfig.json" />
+    <None Include="wwwroot\js\Processes\bundle.js" />
   </ItemGroup>
 
 

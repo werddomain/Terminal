@@ -1,0 +1,16 @@
+﻿@page "/"
+@*https://learn-blazor.com/pages/data-binding/*@
+<input type="text" bind="@traceHost" />
+<button type="button" onclick="@trace">Trace</button>
+<br />
+<textarea id="result">@traceResult</textarea>
+
+@functions{
+
+    string traceResult = "";
+    string traceHost = "";
+    void trace()
+    {
+        var p = new Ping();
+    }
+}
